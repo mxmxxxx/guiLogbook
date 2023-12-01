@@ -66,16 +66,25 @@ nav {
 /* Container for the table */
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 20px auto;
+    overflow-x: auto; /* Add horizontal scrollbar if the table overflows */
 }
 
 /* Table Styling */
 #logbook-table {
-    width: 100%;
+    width: auto; /* Set to auto to ensure table respects content width */
+    min-width: 100%; /* Ensure the table is at least as wide as its container */
     border-collapse: collapse;
     margin: auto;
     background-color: #fff;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        overflow-x: auto; /* Horizontal scrollbar for smaller screens */
+    }
 }
 
 #logbook-table thead th {

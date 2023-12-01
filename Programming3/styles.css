@@ -119,3 +119,22 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+.add-activity-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-activity-button-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-activity-button-container button:hover {
+    background-color: #45a049;
+}
